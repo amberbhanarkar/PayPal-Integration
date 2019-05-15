@@ -121,4 +121,7 @@ def payment_done(request):
 @csrf_exempt
 def payment_canceled(request):
     return render(request, 'ecommerce_app/payment_cancelled.html')
+    
+if __name__ == "__main__":
+    app.run()
 
